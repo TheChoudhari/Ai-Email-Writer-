@@ -1,0 +1,20 @@
+.ai-reply-button {
+  background-image: linear-gradient(90deg, #6a9bff 0%, #e46bff 100%) !important;
+  color: #ffffff !important;
+  padding: 5px 18px !important;
+  height: 32px !important;
+  border-radius: 6px !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  margin-right: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-size: 200% auto !important;
+  transition: 0.4s !important;
+}
+
+.ai-reply-button:hover {
+  background-position: right center !important;
+}
