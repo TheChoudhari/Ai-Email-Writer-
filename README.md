@@ -1,54 +1,104 @@
-# Ai-Email-Writer
-The Spring Boot backend powers the AI Email Writer by managing all server-side logic, data flow, and integration with AI services. It provides a fast, secure, and scalable API layer that connects the frontend with the AI model.
 
-🧠 Key Features
+# 📬 AI Email Reply Assistant
 
-RESTful API Endpoints – Exposes well-structured APIs for handling email generation requests and responses.
+**Write smarter. Reply faster.**
+An intelligent Chrome extension that integrates directly with Gmail to generate context-aware email replies using **Google Gemini AI**. Powered by a scalable **Spring Boot backend** and a sleek **React frontend**, it helps you respond to emails in seconds with the right tone and clarity.
 
-AI Integration – Connects with AI language models (e.g., OpenAI API) to process prompts and return generated email content.
+---
 
-Request Handling – Receives user inputs from the frontend, validates them, and forwards them to the AI service.
+## ✨ What it Does
 
-Response Management – Formats and returns AI responses in a user-friendly JSON structure.
+🚀 Reads your email context and auto-writes a meaningful reply
+⚡ One-click insertion of AI-generated responses inside Gmail
+🧠 Multiple tone options — Professional, Friendly, Concise, etc.
+🔐 Secure communication using Axios → Spring Boot REST API
+🎨 Smooth UI animations with gradient reply button
+🧩 Works seamlessly with Gmail layout
+💡 Improves everyday productivity for students and professionals
 
-🗄️ Architecture & Design
+---
 
-Spring Boot Framework – Ensures lightweight configuration, fast startup, and microservice-friendly development.
+## 🖥️ How It Works
 
-Spring Web / MVC – Manages HTTP requests and routing with clear controller-service-repository layers.
+```
+Gmail → Chrome Extension UI → Axios → Spring Boot API 
+→ Gemini AI → Generated Response → Auto Reply Suggestion
+```
 
-Spring Data JPA – Simplifies database operations and persistence management.
+---
 
-Layered Architecture – Separates concerns for maintainability and scalability (Controller → Service → Repository).
+## 🛠️ Tech Stack
 
-DTOs & Model Mapping – Clean data transfer between layers using DTOs and mapping utilities.
+| Layer               | Technology                     |
+| ------------------- | ------------------------------ |
+| Frontend            | React.js, Axios                |
+| Backend             | Spring Boot, Java              |
+| AI                  | Google Gemini Model            |
+| Browser Integration | Chrome Extension (Manifest V3) |
 
-🔐 Security & Performance
+---
 
-Spring Security with JWT – Implements authentication and authorization for protected endpoints.
+## 📦 Setup Instructions
 
-Input Validation – Ensures secure data handling and prevents malformed requests.
+### ✅ Backend — Spring Boot
 
-CORS Configuration – Enables safe communication between frontend and backend.
+```bash
+cd backend
+mvn spring-boot:run
+```
 
-Exception Handling – Centralized error handling with meaningful HTTP status codes and responses.
+Add your Gemini API Key in `application.properties`.
 
-Optimized API Performance – Uses asynchronous processing and caching strategies where applicable.
+### ✅ Frontend — React
 
-☁️ Deployment & Scalability
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Docker Support – Easily containerized for deployment on any environment.
+### ✅ Chrome Extension
 
-Cloud-Ready – Configured for deployment on AWS, Azure, or Heroku.
+1️⃣ Open `chrome://extensions/`
+2️⃣ Enable **Developer Mode**
+3️⃣ Click **Load unpacked**
+4️⃣ Select the `extension/` folder
 
-Environment Profiles – Supports separate configurations for dev, test, and production.
+Done ✅ Your AI reply button appears in Gmail!
 
-Logging & Monitoring – Integrated with SLF4J/Logback for logging and metrics tracking.
+---
 
-🔄 Overall Role
+## 📸 Preview
 
-Acts as the core communication bridge between the frontend and AI model.
 
-Ensures data consistency, reliability, and security throughout the system.
 
-Provides a scalable foundation for future enhancements such as user management, analytics, and multi-language support.
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/37cb7151-8a93-436c-87a2-2aafa3ea3adb" />
+
+
+
+
+
+---
+
+## 🧑‍💻 Future Enhancements
+
+* ✅ Custom reply templates
+* ✅ Sentiment style selector
+* ✅ Multi-language support
+* ✅ Email signature auto-injection
+* ✅ Chrome sync settings
+
+---
+
+## 🌟 Why This Project?
+
+Because we all waste too much time typing repetitive emails.
+This project solves a **real productivity problem** using cutting-edge AI and modern web technology — ideal for showcasing full-stack engineering skills.
+
+---
+
+## 💖 Support
+
+⭐ If you enjoy this project — **star the repo**!
+Contributions and ideas are always welcome 🤝
+
